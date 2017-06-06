@@ -26,6 +26,17 @@ void p18e_is_bcf   (void);
 
 typedef void (*pf_instruction_t)(void);
 
+typedef struct
+{
+  unsigned char instruction;
+  unsigned char f;
+  boolen        d;
+  boolen        a;
+  unsigned char b;
+  unsigned char n;
+  unsigned char k;
+} Instruction_Type;
+
 #endif /* _P18E_INSTRUCTIONS_SET_H_ */
 
 /* nothing below this line */
